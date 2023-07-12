@@ -42,12 +42,12 @@ mobileNavbar.init();
 
 /* Animação de Digitação */
 
-const meuNome = document.querySelector(`.meuNome`);
+const myName = document.querySelector(`.myName`);
 
 function digitacao(texto, contador){
     if(contador < texto.length){
         setTimeout(() => {
-            meuNome.textContent += texto.charAt(contador);
+            myName.textContent += texto.charAt(contador);
             contador++;
             digitacao(texto, contador);
         }, 120);

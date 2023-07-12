@@ -35,7 +35,6 @@ nav{
 }
 main{
     background: rgb(26, 26, 26);
-    
     justify-content: center;
     align-items: center;
    
@@ -68,14 +67,15 @@ p{
     
   
 }
-.meio{
+.conteiner{
     justify-content: space-around;
     align-items: center;
     display: flex  ;
     margin: 0;
     z-index: -1;
+
 }
-.meioConteudo{
+.content{
     background: #272727;
     height: 92vh;
     width: 80vw;
@@ -133,7 +133,7 @@ p{
         background-position: 300%;
     }
 }
-.meuNome{
+.myName{
     text-transform: uppercase;
     letter-spacing: 4px;
     display: flex;
@@ -142,7 +142,7 @@ p{
     
     
 }
-.textInicio{
+.firtText{
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -162,7 +162,7 @@ span{
     text-transform: uppercase;
 }
 
-.projetos{
+.projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr) ;
     grid-gap: 30px;
@@ -171,12 +171,12 @@ span{
         "item2 item3 ";
     
 }
-.titleProjetos{
+.titleProjects{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.caixaProjetos{
+.caixaProjects{
     border: solid 2px white;
     width: 270px;
     height: 200px;
@@ -219,6 +219,30 @@ span{
     grid-area: item4;
 }
 
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.conteinerIcon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxIcon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconContact{
+    font-size: 50px;
+}
+
 @media(max-width: 999px){
     body{
         overflow-x: hidden;
@@ -250,7 +274,7 @@ span{
         
        
     }
-    .meioConteudo{
+    .content{
         flex-direction: column-reverse;
         
         
@@ -260,7 +284,7 @@ span{
         width: 200px;
     }
 
-    .projetos{
+    .projects{
         display: grid;
         grid-template-columns: repeat(2, 1fr) ;
         grid-gap: 30px;
@@ -270,6 +294,9 @@ span{
             "item3 item3"
             "item4 item4";
         
+    }
+    .conteinerIcon{
+        flex-direction: column;
     }
 
 }
